@@ -87,5 +87,4 @@ Review our full [Contributing Guide](CONTRIBUTING.md) for technical standards.
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
-*Built for the next generation of campus innovators.*
+
