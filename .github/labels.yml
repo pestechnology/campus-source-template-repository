@@ -1,0 +1,39 @@
+- name: "good first issue"
+  color: "7057ff"
+  description: "Ideal for 1st-time contributors. Small scope."
+
+- name: "help wanted"
+  color: "008672"
+  description: "We need extra hands! Medium to High complexity."
+
+- name: "bug"
+  color: "d73a4a"
+  description: "Something is broken. High priority."
+
+- name: "feature"
+  color: "a2eeef"
+  description: "New feature or improvement request."
+
+- name: "documentation"
+  color: "0075ca"
+  description: "Improvements or additions to documentation."
+
+- name: "duplicate"
+  color: "cfd3d7"
+  description: "This issue or PR already exists."
+
+- name: "wontfix"
+  color: "ffffff"
+  description: "This will not be worked on."
+
+- name: "in progress"
+  color: "fef2c0"
+  description: "This task is currently being worked on."
+
+- name: "needs review"
+  color: "e99695"
+  description: "Ready for maintainer feedback."
+
+- name: "critical"
+  color: "b60205"
+  description: "Immediate action required. Major breakage."

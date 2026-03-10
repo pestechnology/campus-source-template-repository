@@ -1,12 +1,16 @@
 ---
 name: 🐛 Bug Report
-about: Found a bug? Let us know so we can fix it!
-labels: bug, triage
+about: Found a bug? Create a report to help us improve.
+title: "[BUG] <Short Summary>"
+labels: bug
 assignees: ''
+
 ---
 
-## 🐛 Bug Description
+## 🔍 Description
 A clear and concise description of what the bug is.
+
+---
 
 ## 🚶 Steps to Reproduce
 Steps to reproduce the behavior:
@@ -15,13 +19,33 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-## 🎯 Expected Behavior
-A clear and concise description of what you expected to happen.
+---
 
-## 🖼️ Screenshots
-If applicable, add screenshots to help explain your problem.
+## ✅ Expected vs Actual Behavior
+**Expected Behavior**: A clear and concise description of what you expected to happen.
+**Actual Behavior**: A clear and concise description of what actually happened.
+
+---
+
+## 🖼️ Screenshots or Logs
+If applicable, add screenshots to help explain your problem. Paste large logs below:
+
+```bash
+# Paste your logs here
+```
+
+---
 
 ## 💻 Environment
-- **OS**: [e.g. macOS, Windows]
-- **Browser**: [e.g. Chrome, Firefox]
-- **Version**: [e.g. v1.0.0]
+
+| System | Version |
+| :--- | :--- |
+| **OS** | [e.g. macOS, Windows, Ubuntu] |
+| **Node.js** | [e.g. v18.12.0] |
+| **Browser** | [e.g. Chrome, Firefox] |
+| **Commit/Tag** | [e.g. v0.1.2 or HEAD] |
+
+---
+
+## 📝 Additional Context
+Add any other context about the problem here. Provide links to Discord discussions if relevant.

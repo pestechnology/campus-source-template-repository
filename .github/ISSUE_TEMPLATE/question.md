@@ -1,15 +1,25 @@
 ---
 name: ❓ Question
-about: Unsure about something? Ask the community here.
-labels: question, triage
+about: Lightweight Q&A template for project inquiries.
+title: "[QUESTION] <Your Question>"
+labels: question
 assignees: ''
+
 ---
 
-## ❓ Question
-What is your question?
+## ❓ Your Question
+What is your question? Please be as specific as possible.
+
+---
 
 ## 📝 Context
-Add any context (screenshots, code snippets, or links) to help us understand.
+Add any context (screenshots, code snippets, or links) to help us understand the problem you are trying to solve.
 
-## 📝 Additional Details
-Add any other details about your inquiry here.
+---
+
+## 💬 Community Check
+- [ ] Have you checked [GitHub Discussions](https://github.com/pestechnology/campus-source-template-repository/discussions)?
+- [ ] Have you asked in Discord `#help-and-support`?
+
+---
+*We usually respond to questions within 24-48 hours.*
