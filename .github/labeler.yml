@@ -1,22 +1,28 @@
-# Add 'documentation' label to any changes within docs folders or root md files
+# Labeler configuration for v5
+
 documentation:
-- docs/**/*
-- "*.md"
+  - changed-files:
+    - any-glob-to-any-file: 
+      - docs/**/*
+      - "*.md"
 
-# Add 'frontend' label to any changes in src/ui or similar folders (example)
 frontend:
-- src/ui/**/*
-- src/components/**/*
-- src/styles/**/*
+  - changed-files:
+    - any-glob-to-any-file:
+      - src/ui/**/*
+      - src/components/**/*
+      - src/styles/**/*
 
-# Add 'backend' label
 backend:
-- src/api/**/*
-- src/db/**/*
-- src/services/**/*
+  - changed-files:
+    - any-glob-to-any-file:
+      - src/api/**/*
+      - src/db/**/*
+      - src/services/**/*
 
-# Add 'tests' label
 tests:
-- tests/**/*
-- "**/*.test.js"
-- "**/*.spec.js"
+  - changed-files:
+    - any-glob-to-any-file:
+      - tests/**/*
+      - "**/*.test.js"
+      - "**/*.spec.js"
