@@ -1,7 +1,8 @@
 ---
 name: 🚀 Feature Request
-about: Suggest an idea for this project.
-labels: enhancement
+about: Have an idea for an improvement? Suggest it here!
+labels: enhancement, triage
+assignees: ''
 ---
 
 ## 🚀 Feature Description

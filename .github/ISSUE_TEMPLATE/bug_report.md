@@ -1,7 +1,8 @@
 ---
 name: 🐛 Bug Report
-about: Create a report to help us improve.
-labels: bug
+about: Found a bug? Let us know so we can fix it!
+labels: bug, triage
+assignees: ''
 ---
 
 ## 🐛 Bug Description

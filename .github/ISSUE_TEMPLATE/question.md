@@ -1,7 +1,8 @@
 ---
 name: ❓ Question
-about: Ask a question about the project or contribution process.
-labels: question
+about: Unsure about something? Ask the community here.
+labels: question, triage
+assignees: ''
 ---
 
 ## ❓ Question

@@ -8,30 +8,44 @@ A professional, streamlined starter kit for student-led open-source projects. De
 
 ---
 
-## � Overview
+## 📖 Project Overview
 
-Campus Source provides a standardized foundation for campus projects. Our goal is to bridge the gap between classroom theory and industry-standard software engineering practices through collaborative development.
+### Purpose
+The mission of **Campus Source** is to bridge the gap between classroom theory and industry-standard software engineering. We provide a platform for students to collaborate on impactful campus projects while learning professional workflows.
 
-## � Key Features
-
+### Key Features
 - **Standardized Architecture**: Logical separation of code, documentation, and community resources.
 - **Contribution Ready**: Comprehensive guides and templates to reduce friction for new developers.
-- **Automated Workflows**: Pre-configured GitHub Actions for continuous integration.
-- **Community Integrated**: Ready-to-use communication and support infrastructure.
+- **Automated Workflows**: Pre-configured GitHub Actions for continuous integration (Tests & Linting).
+- **Community Integrated**: Ready-to-use communication and support infrastructure (Discord, Email, Discussions).
+
+### Tech Stack
+- **Frontend**: React.js / Tailwind CSS (Placeholder)
+- **Backend**: Node.js / Express (Placeholder)
+- **Database**: PostgreSQL / MongoDB (Placeholder)
+- **CI/CD**: GitHub Actions
+
+---
+
+## 🏗️ Project Architecture
+
+The repository is structured into four main pillars:
+1. **GitHub Config (`.github/`)**: Contains issue/PR templates and CI/CD workflows.
+2. **Library & Logic (`src/`)**: The core source code of the project.
+3. **Documentation (`docs/`)**: Deep-dives into setup, architecture, and development standards.
+4. **Community (`community/`)**: Governance, roadmaps, and communication structure.
 
 ---
 
 ## 🏗️ Getting Started
 
 ### Prerequisites
-
 - **Node.js**: v18.0 or higher
-- **Git**: Latest version
+- **Git**: Latest version installed and configured.
 
 ### Installation
-
-1. Create a new repository using this template.
-2. Clone your new repository:
+1. Click the **"Use this template"** button to create your own repository.
+2. Clone your repo:
    ```bash
    git clone https://github.com/your-org/your-project.git
    cd your-project
@@ -42,24 +56,22 @@ Campus Source provides a standardized foundation for campus projects. Our goal i
    ```
 
 ### Execution
-
 ```bash
 npm run dev
 ```
 
-For detailed setup instructions, please refer to the [Setup Guide](docs/setup-guide.md).
+For detailed instructions, refer to the [Setup Guide](docs/setup-guide.md).
 
 ---
 
-## 🤝 Contribution Guidelines
+## 🤝 Contribution Process
 
-We welcome contributions from students of all skill levels. To maintain project quality, please follow our established workflow:
+We welcome contributions of all types! To get started:
+1. **Explore**: Find an issue with the [good-first-issue](https://github.com/pestechnology/campus-source-template-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) label.
+2. **Branch**: Create a new branch following our [Branching Conventions](CONTRIBUTING.md#branching-conventions).
+3. **Draft PR**: Submit your work early as a Draft PR to get feedback.
 
-1. **Find an Issue**: Browse our [Good First Issues](https://github.com/your-org/your-project/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-2. **Propose Changes**: Open an issue or comment on an existing one before starting work.
-3. **Draft Pull Request**: Follow our [PR Template](.github/PULL_REQUEST_TEMPLATE.md) and ensure all CI checks pass.
-
-Review our full [Contributing Guide](CONTRIBUTING.md) for technical standards and coding style.
+Review our full [Contributing Guide](CONTRIBUTING.md) for technical standards.
 
 ---
 
@@ -68,11 +80,11 @@ Review our full [Contributing Guide](CONTRIBUTING.md) for technical standards an
 - **Discord**: Real-time discussions and mentorship. [Join the Server](https://discord.gg/yourlink).
 - **GitHub Discussions**: Asynchronous Q&A and feature brainstorming.
 - **Email Support**: [support@campussource.org](mailto:support@campussource.org).
+- **Weekly Syncs**: Join our community calls every Saturday at 7:00 PM IST.
 
 ---
 
-## � License
-
+## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
