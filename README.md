@@ -1,5 +1,3 @@
-![Campus Source Banner](assets/banner.png)
-
 # 🎓 Campus Events Tracker
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
