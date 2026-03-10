@@ -1,80 +1,80 @@
-![Campus Source Banner](assets/banner.png)
+# 🎓 Campus Source - Project Template
 
-# 🎓 Campus Events Tracker
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/campus-events)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
-[![Roadmap](https://img.shields.io/badge/Project-Roadmap-blueviolet)](ROADMAP.md)
-
-Campus Events Tracker: A platform to track all events on campus. This is the definitive **plug-and-play starter kit** for student clubs, college projects, and campus communities. Designed to bridge the gap between classroom theory and real-world engineering.
+Welcome to **Campus Source**! This is a plug-and-play starter kit for student clubs, college projects, and campus communities. This repository is designed to help you get your project "open-source ready" in minutes.
 
 ---
 
-## 🏛️ Project Navigation
-
-| 💡 [Roadmap](ROADMAP.md) | 🧪 [Setup Guide](docs/ENVIRONMENT_SETUP.md) | 🤝 [Contributing](CONTRIBUTING.md) | 🧑‍🔬 [Maintainers](docs/MAINTAINERS.md) | 🏷️ [Labels](docs/LABELS.md) | ❓ [FAQ](docs/FAQ.md) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+## 📖 Table of Contents
+- [Vision](#🚀-vision)
+- [Features](#🛠️-features)
+- [Project Architecture](#🏗️-project-architecture)
+- [Getting Started](#🏗️-getting-started)
+- [How to Contribute](#🤝-how-to-contribute)
+- [Community Links](#📢-stay-connected)
+- [Maintainers](#🧑‍🔬-maintainers)
 
 ---
 
-## 🚀 Vision & Features
-Our mission is to empower students to build high-quality software through collaborative open source.
+## 🚀 Vision
+Our mission is to bridge the gap between academic learning and real-world software engineering. We provide students with a platform to contribute to impactful projects while following professional standards.
 
-- **Standardized Structure**: Pre-configured directories for source, tests, and docs.
-- **Contribution Ready**: Professional Issue/PR templates inspired by top-tier repos.
-- **Gamified Growth**: Track your progress from a `Contributor` to a `Campus Legend`.
-- **Community Integrated**: Direct links to Discord for mentorship and support.
+## 🛠️ Features
+- **Standardized Structure**: Separated code, documentation, and community folders.
+- **Onboarding Docs**: Easy-to-follow setup and contribution guides.
+- **Community Integrated**: Pre-configured links for Discord, Email, and Discussions.
+- **Workflow Automation**: Automated issue and PR templates.
+
+## 🏗️ Project Architecture
+The project follows a modular structure to ensure scalability and ease of maintenance.
+- **`src/`**: Core application logic.
+- **`docs/`**: Project documentation (Overview, Architecture, Setup).
+- **`community/`**: Community governance and roadmap.
+- **`.github/`**: Automation and project standards.
 
 ---
 
 ## 🏗️ Getting Started
 
-### 1. Use this Template
-Click the **"Use this template"** button at the top of this repository to create your own copy.
+### 1. Prerequisites
+- [Node.js](https://nodejs.org/) (v18+)
+- [Git](https://git-scm.com/)
 
-### 2. Auto-Customize
-We've included a script to help you rename the package and clean up templates:
+### 2. Installation
 ```bash
-git clone https://github.com/your-org/your-repo.git
-cd your-repo
-chmod +x scripts/setup.sh
-./scripts/setup.sh
+git clone https://github.com/pestechnology/campus-source-template-repository.git
+cd campus-source-template-repository
+npm install
 ```
 
-### 3. Local Development
+### 3. Running the Project
 ```bash
-npm install
 npm run dev
 ```
+
+For more detailed instructions, see the [Setup Guide](docs/setup-guide.md).
 
 ---
 
 ## 🤝 How to Contribute
 We love student contributions! 
-1.  **Find an Issue**: Browse [Good First Issues](https://github.com/campus-source/template/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-2.  **Fork & Branch**: Create your feature branch.
-3.  **Submit a PR**: Use our template to tell us what you built!
+1. **Fork** the repository.
+2. **Create a branch** for your feature or fix.
+3. **Commit** your changes with clear messages.
+4. **Submit a PR** using our template.
 
----
-
-## 🏆 Contributor Levels
-We celebrate every merge! Check our **[Contributors / Hall of Fame](CONTRIBUTORS.md)**.
-- 🥉 **Bronze**: 1 merged PR.
-- 🥈 **Silver**: 5 merged PRs.
-- 🥇 **Gold**: 10+ merged PRs.
+Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ---
 
 ## 📢 Stay Connected
-- **[Discord](https://discord.gg/campus-events)**: For real-time help and networking.
-- **[GitHub Discussions](https://github.com/campus-source/template/discussions)**: For ideas and long-form Q&A.
-- **Email**: [contact@campusevents.dev](mailto:contact@campusevents.dev)
+- **Discord**: [Join our virtual office](https://discord.gg/yourlink)
+- **Email**: [contribute@yourcampus.dev](mailto:contribute@yourcampus.dev)
+- **Issues**: [Report bugs or request features](https://github.com/pestechnology/campus-source-template-repository/issues)
 
 ---
 
-## 📜 License
-Distributed under the MIT License. See `LICENSE` for more information.
+## 🧑‍🔬 Maintainers
+- **Student Lead**: [Name](https://github.com/username)
+- **Tech Lead**: [Name](https://github.com/username)
 
----
 *Built with ❤️ by students, for students.*
