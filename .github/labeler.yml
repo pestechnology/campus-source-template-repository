@@ -1,13 +1,18 @@
-# Minimalist Labeler configuration for v5
-
 documentation:
-  - any: ['docs/**/*', '*.md']
+- 'docs/**/*'
+- '*.md'
 
 frontend:
-  - any: ['src/ui/**/*', 'src/components/**/*', 'src/styles/**/*']
+- 'src/ui/**/*'
+- 'src/components/**/*'
+- 'src/styles/**/*'
 
 backend:
-  - any: ['src/api/**/*', 'src/db/**/*', 'src/services/**/*']
+- 'src/api/**/*'
+- 'src/db/**/*'
+- 'src/services/**/*'
 
 tests:
-  - any: ['tests/**/*', '**/*.test.js', '**/*.spec.js']
+- 'tests/**/*'
+- '**/*.test.js'
+- '**/*.spec.js'
