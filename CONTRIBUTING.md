@@ -1,47 +1,35 @@
-# 🤝 Contributing to Campus Source
+# Contributing Guidelines
 
-First off, thank you for considering contributing! It's students like you that make this community great.
+Thank you for your interest in contributing to Campus Source. We value your time and technical expertise. This guide ensures a consistent and high-quality contribution experience for everyone.
 
-## 🚀 The Workflow
+## ⚖️ Code of Conduct
 
-### 1. Fork the Repository
-Click the "Fork" button at the top right of the page to create your own copy of the project.
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-### 2. Create a Branch
-Create a branch for your work. Use a descriptive name:
-```bash
-git checkout -b feature/awesome-new-tool
-# or
-git checkout -b fix/correct-login-bug
-```
+## 🛠️ Development Workflow
 
-### 3. Make Your Changes
-Write clean, documented code. Follow the project's style guidelines.
+1. **Fork & Clone**: Create a personal fork and clone it to your local machine.
+2. **Branching**: Create a new branch for every feature or fix.
+   - Use descriptive names: `feat/user-auth` or `fix/navigation-bug`.
+3. **Coding Standards**:
+   - Write clean, self-documenting code.
+   - Follow the existing architectural patterns in `src/`.
+   - Ensure all new logic is covered by unit tests in `tests/`.
+4. **Commits**: Use [Conventional Commits](https://www.conventionalcommits.org/) for clear version history.
+5. **Pull Request**: Open a PR against the `main` branch once your changes are tested.
 
-### 4. Commit with Clear Message
-```bash
-git commit -m "feat: add campus event tracker component"
-```
+## 🎨 Contribution Categories
 
-### 5. Create a Pull Request (PR)
-Push your branch to your fork and open a PR against our `main` branch. Fill out the PR template completely.
+- **Core Development**: Implementing new features and fixing bugs.
+- **Documentation**: Improving guides, READMEs, and API docs.
+- **Maintenance**: Refactoring code and updating dependencies.
+- **Community**: Helping others in Discord and triaging issues.
+
+## 🧪 Testing & Quality Assurance
+
+- Run `npm test` locally before pushing.
+- Run `npm run lint` to verify code formatting.
+- Ensure that your Pull Request is linked to an existing Issue.
 
 ---
-
-## 🎨 Contribution Types
-We welcome all kinds of contributions:
-- **Bug Fixes**: Help us squash bugs.
-- **Feature Additions**: Build something new.
-- **Documentation**: Improve our guides and READMEs.
-- **UI Improvements**: Make the project look better.
-
-## 📏 Coding Guidelines
-- Follow the existing code style in `src/`.
-- Document new functions and components.
-- Keep commits focused on a single change.
-
-## 🧪 Testing Requirements
-- Run `npm test` before submitting your PR.
-- Add new tests in the `tests/` directory for any new logic added.
-
-*Happy Coding!* 🚀
+*Questions? Contact the maintainers in the `#contributors` channel on Discord.*

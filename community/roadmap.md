@@ -1,23 +1,28 @@
-# 🗺️ Project Roadmap
+# Project Roadmap
 
-This roadmap outlines the planned evolution of the project. We value community input!
+The vision for Campus Source is divided into strategic phases. Progress is driven by community needs and contributor bandwidth.
 
-## 🗓️ Phase 1: Basic Functionality
-- [x] Initial project setup.
-- [x] Essential documentation and templates.
-- [ ] Core feature #1 implementation.
-- [ ] Unit test foundation.
+## 📍 current Focus
+- Stability and documentation excellence.
+- Automated CI/CD pipelines.
+- Multi-framework support.
 
-## 🗓️ Phase 2: Advanced Features
-- [ ] Integration with campus authentication.
-- [ ] User profile and dashboard.
-- [ ] Real-time notifications.
+## 🗺️ Phases
 
-## 🗓️ Phase 3: Scaling & Deployment
-- [ ] Multi-campus support.
-- [ ] Deployment to cloud environment.
-- [ ] Public API documentation.
+### Phase 1: Foundation
+- [x] Standardized repository structure.
+- [x] Onboarding documentation.
+- [ ] Core module architecture.
+
+### Phase 2: Engagement
+- [ ] Leaderboard and contributor recognition system.
+- [ ] Integration with Campus Discord Bot.
+- [ ] Automated badge generation for PR merges.
+
+### Phase 3: Scaling
+- [ ] University-wide API for common campus data.
+- [ ] Mobile-native companion app.
+- [ ] Automated deployment of student projects.
 
 ---
-### 💡 Have a suggestion?
-If you have ideas for Phase 2 or 3, please start a discussion in our [Discord](https://discord.gg/yourlink) `#ideas` channel!
+*Propose new milestones in [GitHub Discussions](https://github.com/pestechnology/campus-source-template-repository/discussions).*

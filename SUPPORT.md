@@ -1,25 +1,29 @@
-# 🆘 Support Channels
+# Support & Communication
 
-Need help? Have a question? We're here for you!
+We are committed to supporting our community through transparent and efficient communication channels.
 
-## 💬 Discord Community
-The fastest way to get help is to join our Discord server. It's our virtual campus office!
-- **Join here**: [https://discord.gg/yourlink](https://discord.gg/yourlink)
+## 💬 Real-Time Support
 
-## 📩 Email Support
-For official inquiries, partnership requests, or technical help that isn't suited for public chat:
-- **General Support**: [support@campussource.org](mailto:support@campussource.org)
-- **Contribution Inquiries**: [contribute@campussource.org](mailto:contribute@campussource.org)
+- **Discord**: Our primary hub for real-time collaboration. [Join our Virtual Office](https://discord.gg/yourlink).
+- **Channels**:
+  - `#help-support`: Technical troubleshooting and environment setup.
+  - `#project-discussion`: Architectural and feature-level conversations.
 
-## 📁 GitHub Discussions
-Use [GitHub Discussions](https://github.com/pestechnology/campus-source-template-repository/discussions) for:
-- Asking general questions.
-- Brainstorming new ideas (RFCs).
-- Show-and-tell of what you've built.
+## 📩 Official Channels
 
-## 🐛 GitHub Issues
-- **Report Bugs**: [Open a Bug Report](.github/ISSUE_TEMPLATE/bug_report.md)
-- **Request Features**: [Suggest an Improvement](.github/ISSUE_TEMPLATE/feature_request.md)
+- **Email**: For formal inquiries or administrative support.
+  - [support@campussource.org](mailto:support@campussource.org)
+  - [contribute@campussource.org](mailto:contribute@campussource.org)
+
+## 📁 GitHub Infrastructure
+
+- **Issues**: Use for bug reports and feature requests. Please use the provided [Templates](.github/ISSUE_TEMPLATE/).
+- **Discussions**: Ideal for long-form questions, RFCs, and community announcements.
+
+## 📅 Community Syncs
+
+- **Weekly Meetings**: Every Saturday, 7:00 PM IST via Discord Voice.
+- **Goal**: Project updates, demos, and roadmap planning.
 
 ---
-*We aim to respond to all inquiries within 24-48 hours. Thank you for being part of Campus Source!*
+*We aim to respond to all inquiries within 2 business days. Thank you for your contributions!*
