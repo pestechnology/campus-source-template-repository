@@ -1,0 +1,19 @@
+{
+  "name": "campus-events-tracker",
+  "version": "1.0.0",
+  "description": "A platform to track all events on campus.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "echo 'Run dev mode'",
+    "build": "echo 'Build the project'",
+    "test": "echo 'Error: no test specified' && exit 0",
+    "lint": "echo 'Run linter'"
+  },
+  "keywords": [
+    "campus-source",
+    "student-innovation",
+    "open-source"
+  ],
+  "author": "Campus Source Contributors",
+  "license": "MIT"
+}
