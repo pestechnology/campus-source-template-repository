@@ -1,28 +1,13 @@
-# Labeler configuration for v5
+# Minimalist Labeler configuration for v5
 
 documentation:
-  - changed-files:
-    - any-glob-to-any-file: 
-      - docs/**/*
-      - "*.md"
+  - any: ['docs/**/*', '*.md']
 
 frontend:
-  - changed-files:
-    - any-glob-to-any-file:
-      - src/ui/**/*
-      - src/components/**/*
-      - src/styles/**/*
+  - any: ['src/ui/**/*', 'src/components/**/*', 'src/styles/**/*']
 
 backend:
-  - changed-files:
-    - any-glob-to-any-file:
-      - src/api/**/*
-      - src/db/**/*
-      - src/services/**/*
+  - any: ['src/api/**/*', 'src/db/**/*', 'src/services/**/*']
 
 tests:
-  - changed-files:
-    - any-glob-to-any-file:
-      - tests/**/*
-      - "**/*.test.js"
-      - "**/*.spec.js"
+  - any: ['tests/**/*', '**/*.test.js', '**/*.spec.js']
