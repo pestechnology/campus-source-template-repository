@@ -1,72 +1,89 @@
-# 🤝 Contributing to Campus Source
+# Contributing to Campus Source
 
-First off, thank you for considering contributing to Campus Source! It's students like you that make this community great.
-
-This guide will help you get started with contributing. Please follow these steps to ensure a smooth contribution process.
-
-## 🌈 Our Philosophy
-We believe that every contribution—no matter how small—is valuable. We've gamified the experience to help you track your growth as an engineer.
-
-### 🏆 Contributor Levels
-As you contribute, you'll earn badges and roles in our Discord:
-- **🥉 Bronze**: Your first merged PR. Welcome to the team!
-- **🥈 Silver**: 5 merged PRs. You're becoming a maintainer's right hand.
-- **🥇 Gold**: 10+ merged PRs. You're a campus legend and a project mentor.
-
-### 🎃 Hacktoberfest & GSSoC
-We are proud participants in **Hacktoberfest** and other student programs. Look for the `hacktoberfest` or `gssoc` labels on issues to earn external recognition!
+Thank you for your interest in contributing. This guide outlines the technical standards and workflows required to maintain a high-quality codebase.
 
 ---
 
-## 🚀 The Workflow
+## Prerequisites
 
-### 1. Find or Create an Issue
-Before you start coding, please ensure there is an issue that describes what you want to do. 
-- Look for [Good First Issues](https://github.com/campus-source/template/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) if you are new.
-- If it's a new idea, [open a Feature Request](.github/ISSUE_TEMPLATE/feature_request.md).
+| Tool | Recommended | Purpose |
+| :--- | :--- | :--- |
+| **Node.js** | v18.x+ | Runtime environment |
+| **npm** | v9.x+ | Package management |
+| **Git** | latest | Version control |
 
-### 2. Fork the Repository
-Click the "Fork" button at the top right of this page to create your own copy of the project.
+---
 
-### 3. Create a Branch
-Create a branch for your work. Use a descriptive name:
+## Local Development Setup
+
+Follow these steps to initialize your local environment:
+
 ```bash
-git checkout -b feature/awesome-new-tool
-# or
-git checkout -b fix/correct-login-bug
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/campus-source.git
+cd campus-source
+
+# Synchronize with upstream
+git remote add upstream https://github.com/pestechnology/campus-source-template-repository.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-### 4. Code & Commit
-- Write clean, documented code.
-- Follow the project's style guidelines.
-- Commit your changes with clear messages:
-```bash
-git commit -m "feat: add campus event tracker component"
-```
+---
 
-### 5. Submit a Pull Request (PR)
-Once your code is ready:
-1. Push your branch to your fork.
-2. Open a PR against our `main` branch.
-3. Fill out the **Pull Request Template** completely.
+## GitHub Flow
+
+We utilize a branch-based workflow to ensure the stability of the production branch.
+
+1. **Fork**: Create a personal copy of the repository.
+2. **Branch**: Develop your changes on a descriptive feature branch.
+3. **Commit**: Use Conventional Commits for clear version history.
+4. **Pull Request**: Submit your changes for peer review.
 
 ---
 
-## 📏 Standards & Best Practices
+## Conventional Commits
 
-### Code Quality
-- **Lint your code**: Run `npm run lint` before committing.
-- **Write Tests**: If you add logic, add a test in the `tests/` directory.
-- **Documentation**: Update `README.md` or files in `docs/` if your changes affect usage.
+We adhere to the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
-### Git Etiquette
-- Keep PRs focused. One PR per feature/fix.
-- Be responsive to feedback during the review process.
+**Format**: `<type>(<scope>): <summary>`
+
+| Type | Description |
+| :--- | :--- |
+| **feat** | Implementation of new functionality |
+| **fix** | Resolution of a bug or issue |
+| **docs** | Updates to documentation |
+| **refactor** | Code changes without functional impact |
+| **test** | Additions or corrections to testing suites |
 
 ---
 
-## 🆘 Need Help?
-- **Discord**: Join the `#contributing` channel in our [Discord](https://discord.gg/campus-events).
-- **Mentorship**: If you're stuck, just comment "I'd like some help with this" on your issue/PR, and a maintainer will guide you!
+## Pull Request Guidelines
 
-*Happy Coding!* 🚀
+1. **Sync**: Ensure your branch is up-to-date with `upstream/main`.
+2. **Template**: Complete the Pull Request template in full.
+3. **Review**: Maintainers will provide feedback within 48–72 hours.
+4. **Labels**: PRs will be labeled by size (Small/Medium/Large) during triage.
+
+---
+
+## Engineering Standards
+
+- **Testing**: All new logic must be accompanied by unit tests in the `tests/` directory.
+- **Linting**: Code must pass `npm run lint` before submission.
+- **Documentation**: Update `docs/ARCHITECTURE.md` for major architectural changes.
+
+---
+
+## Support Channels
+
+- **GitHub Discussions**: Architectural proposals and high-level Q&A.
+- **Discord**: Technical assistance and project synchronization.
+- **Email**: Administrative and formal inquiries.
+
+---
+*Thank you for contributing to the Campus Source ecosystem.*

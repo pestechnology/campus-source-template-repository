@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Source | Student-First OSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card-bg: #14141d;
+            --purple: #7c6af7;
+            --green: #4ade9e;
+            --text: #e1e1e6;
+            --text-dim: #9494a0;
+            --border: #2d2d3d;
+            --grid: rgba(124, 106, 247, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(var(--grid) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--purple);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--purple);
+        }
+
+        /* Hero Section */
+        header {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 5rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to bottom, #fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--purple);
+            color: white;
+            box-shadow: 0 4px 20px rgba(124, 106, 247, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(124, 106, 247, 0.4);
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--border);
+            color: var(--text);
+            background: var(--card-bg);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--purple);
+        }
+
+        /* Stats Strip */
+        .stats {
+            padding: 2rem 5%;
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--green);
+            font-size: 1.5rem;
+        }
+
+        .stat-item p {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        /* Community Section */
+        section {
+            padding: 8rem 5%;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 16px;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--purple);
+            transform: translateY(-5px);
+        }
+
+        .card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .pill {
+            background: rgba(124, 106, 247, 0.1);
+            color: var(--purple);
+            padding: 0.2rem 0.8rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        /* Contribution Flow */
+        .flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .step {
+            position: relative;
+        }
+
+        .step-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            color: var(--border);
+            position: absolute;
+            top: -2.5rem;
+            left: -1rem;
+            z-index: -1;
+        }
+
+        /* Code Block */
+        .code-window {
+            background: #0d0d12;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 4rem;
+            position: relative;
+        }
+
+        .code-window::before {
+            content: "Terminal";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            padding-top: 5px;
+        }
+
+        .code-keyword { color: var(--purple); }
+        .code-string { color: var(--green); }
+        .code-comment { color: #5c6370; }
+
+        /* Label Section */
+        .label-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .tag {
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 5rem 5%;
+            background: #050508;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .flow { grid-template-columns: 1fr; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Campus Source</div>
+        <ul>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#quickstart">Quick Start</a></li>
+            <li><a href="#labels">Labels</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Student-First<br>Open Source.</h1>
+        <p>The world-class development framework and community platform for student projects. Built by campus innovators for the global stage.</p>
+        <div class="cta-group">
+            <a href="https://github.com/pestechnology/campus-source-template-repository/generate" class="btn btn-primary">Use This Template</a>
+            <a href="https://discord.gg/[CUSTOMIZE]" class="btn btn-secondary">Join Discord</a>
+        </div>
+    </header>
+
+    <div class="stats">
+        <div class="stat-item">
+            <h3>32+</h3>
+            <p>Project Files</p>
+        </div>
+        <div class="stat-item">
+            <h3>4+</h3>
+            <p>OSS Templates</p>
+        </div>
+        <div class="stat-item">
+            <h3>Ready</h3>
+            <p>CI/CD Pipelines</p>
+        </div>
+        <div class="stat-item">
+            <h3>MIT</h3>
+            <p>Public License</p>
+        </div>
+    </div>
+
+    <section id="community">
+        <h2 class="section-title">Community Ecosystem</h2>
+        <div class="community-grid">
+            <div class="card">
+                <h4>Discord Server</h4>
+                <p>Our primary hub for synchronous collaboration and peer support.</p>
+                <div class="pills">
+                    <span class="pill">#announcements</span>
+                    <span class="pill">#help-and-support</span>
+                    <span class="pill">#bug-reports</span>
+                    <span class="pill">#pull-requests</span>
+                    <span class="pill">#ideas</span>
+                    <span class="pill">#off-topic</span>
+                </div>
+            </div>
+            <div class="card">
+                <h4>GitHub Discussions</h4>
+                <p>Asynchronous Q&A, RFCs, and high-level architectural brainstorming.</p>
+                <div class="btn btn-secondary" style="margin-top: auto; padding: 0.5rem 1rem;">View Discussions</div>
+            </div>
+            <div class="card">
+                <h4>Email Support</h4>
+                <p>Official project inquiries, partnerships, and high-sensitivity conduct reports.</p>
+                <p><code style="color: var(--purple);">contribute@[CUSTOMIZE].dev</code></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" style="background: rgba(255,255,255,0.02);">
+        <h2 class="section-title">Contribution Flow</h2>
+        <div class="flow">
+            <div class="step">
+                <div class="step-number">01</div>
+                <h4>Find & Claim</h4>
+                <p>Find an issue with the <span style="color: var(--purple); font-weight: bold;">good-first-issue</span> label and claim it in the comments.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <h4>Fork & Setup</h4>
+                <p>Fork the repository and set up your local development environment using the setup guide.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <h4>Code & Test</h4>
+                <p>Implement your feature or fix. Follow our commit conventions and ensure tests pass locally.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <h4>Submit PR</h4>
+                <p>Push your changes and open a Pull Request. Fill out the PR template with all required details.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">05</div>
+                <h4>Peer Review</h4>
+                <p>Maintainers will review your code. Engage with feedback and iterate on your branch.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">06</div>
+                <h4>Merged!</h4>
+                <p>Your contribution is officially part of the project. Welcome to the Campus Source hall of fame!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quickstart">
+        <h2 class="section-title">Quick Start</h2>
+        <div class="code-window">
+            <span class="code-comment"># Clone your fork</span><br>
+            <span class="code-keyword">git clone</span> https://github.com/USER/campus-source.git<br>
+            <span class="code-keyword">cd</span> campus-source<br><br>
+            <span class="code-comment"># Install and branch</span><br>
+            <span class="code-keyword">npm</span> install<br>
+            <span class="code-keyword">git checkout -b</span> <span class="code-string">feat/cool-feature</span><br><br>
+            <span class="code-comment"># Commit following conventions</span><br>
+            <span class="code-keyword">git commit -m</span> <span class="code-string">"feat(ui): add modern card animations"</span>
+        </div>
+    </section>
+
+    <section id="labels">
+        <h2 class="section-title">Issue Label System</h2>
+        <div class="label-grid">
+            <span class="tag" style="background: #7057ff; color: white;">good first issue</span>
+            <span class="tag" style="background: #008672; color: white;">help wanted</span>
+            <span class="tag" style="background: #d73a4a; color: white;">bug</span>
+            <span class="tag" style="background: #a2eeef; color: #1e3a3b;">enhancement</span>
+            <span class="tag" style="background: #0075ca; color: white;">documentation</span>
+            <span class="tag" style="background: #b60205; color: white;">critical</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Source. Licensed under MIT. Built for student innovation.</p>
+        <p style="margin-top: 0.5rem;"><a href="#" style="color: var(--text-dim); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--text-dim); text-decoration: none;">Documentation</a> | <a href="#" style="color: var(--text-dim); text-decoration: none;">GitHub</a></p>
+    </footer>
+</body>
+</html>

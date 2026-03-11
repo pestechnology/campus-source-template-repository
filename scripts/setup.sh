@@ -1,24 +1,27 @@
 #!/bin/bash
 
-# Campus Source Template Setup Script
-# This script helps students quickly customize the template.
+# Campus Source | Project Initialization Script
+# This script automates the customization of the template for your specific project.
+# Usage: ./scripts/setup.sh
 
-set -e # Exit on error
+set -e
 
-echo "🎓 Welcome to the Campus Source Setup!"
-echo "---------------------------------------"
+echo "------------------------------------------------"
+echo " Campus Source | Project Setup"
+echo "------------------------------------------------"
 
-# Detect OS for sed differences
+# Detect OS for sed compatibility
 OS_TYPE="$(uname)"
 
-read -p "Enter your Project Name (e.g., Campus Events): " PROJECT_NAME
-read -p "Enter a short description: " DESCRIPTION
-read -p "Enter your Discord Invite Link: " DISCORD_LINK
-read -p "Enter your Support Email: " SUPPORT_EMAIL
+# Prompt for project details
+read -p "Project Name (e.g., Campus Events): " PROJECT_NAME
+read -p "Project Description: " PROJECT_DESC
+read -p "Discord Invite Link: " DISCORD_LINK
+read -p "Support Email: " SUPPORT_EMAIL
 
-echo "🛠️ Customizing your repository..."
+echo "Initializing configuration..."
 
-# Helper function for cross-platform sed
+# Helper function for cross-platform implementation of sed -i
 safe_sed() {
     if [[ "$OS_TYPE" == "Darwin" ]]; then
         sed -i '' "$1" "$2"
@@ -27,32 +30,33 @@ safe_sed() {
     fi
 }
 
-# Replace placeholders in README.md
-safe_sed "s/Campus Source - Project Template/$PROJECT_NAME/g" README.md
-safe_sed "s/Welcome to \*\*Campus Source\*\*!/$PROJECT_NAME: $DESCRIPTION/g" README.md
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" README.md
-safe_sed "s/contribute@yourcampus.dev/$SUPPORT_EMAIL/g" README.md
+# 1. Update README.md
+safe_sed "s/\[CUSTOMIZE\]_PROJECT_NAME/$PROJECT_NAME/g" README.md
+safe_sed "s/\[CUSTOMIZE\]_DESCRIPTION/$PROJECT_DESC/g" README.md
+safe_sed "s|https://discord.gg/\[CUSTOMIZE\]|$DISCORD_LINK|g" README.md
+safe_sed "s/contribute@\[CUSTOMIZE\].dev/$SUPPORT_EMAIL/g" README.md
 
-# Replace in SUPPORT.md
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" SUPPORT.md
-safe_sed "s/contribute@yourcampus.dev/$SUPPORT_EMAIL/g" SUPPORT.md
+# 2. Update Documentation
+FILES_TO_UPDATE=("CONTRIBUTING.md" "SUPPORT.md" "docs/ROADMAP.md" "docs/GETTING_STARTED.md" "docs/ARCHITECTURE.md")
 
-# Replace in documentation
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" docs/FAQ.md
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" docs/GETTING_STARTED.md
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" CONTRIBUTING.md
-safe_sed "s|https://discord.gg/yourlink|$DISCORD_LINK|g" ROADMAP.md
+for FILE in "${FILES_TO_UPDATE[@]}"; do
+    if [ -f "$FILE" ]; then
+        safe_sed "s|https://discord.gg/\[CUSTOMIZE\]|$DISCORD_LINK|g" "$FILE"
+        safe_sed "s/contribute@\[CUSTOMIZE\].dev/$SUPPORT_EMAIL/g" "$FILE"
+        echo "Updated $FILE"
+    fi
+done
 
-# Replace in package.json
+# 3. Update package.json
 PROJECT_SLUG=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
-# Using a different delimiter to avoid issues with potential slashes in descriptions
-safe_sed "s|\"name\": \"campus-source-project\"|\"name\": \"$PROJECT_SLUG\"|g" package.json
-safe_sed "s|\"description\": \"A student project built with Campus Source template\"|\"description\": \"$DESCRIPTION\"|g" package.json
+safe_sed "s/\"name\": \"campus-source-project-template\"/\"name\": \"$PROJECT_SLUG\"/g" package.json
+safe_sed "s/\"description\": \"A starter kit for student open source projects.\"/\"description\": \"$PROJECT_DESC\"/g" package.json
 
-echo "🧹 Cleaning up..."
-# Optionally remove the template finalize guide if the user is done
-# rm TEMPLATE.md
-
-echo "✅ Done! Your project '$PROJECT_NAME' is ready for innovation."
-echo "👉 PR / Roadmap / Labels / FAQ are all updated."
-echo "👉 Don't forget to push these changes: 'git commit -am \"chore: customize project\" && git push'"
+echo "------------------------------------------------"
+echo "Initialization Complete."
+echo "Project: $PROJECT_NAME"
+echo "Next Steps:"
+echo "1. Review the changes: git status"
+echo "2. Commit your configuration: git commit -am \"chore: initialize project\""
+echo "3. Push to your repository: git push"
+echo "------------------------------------------------"

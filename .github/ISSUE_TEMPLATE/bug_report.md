@@ -1,14 +1,16 @@
 ---
 name: 🐛 Bug Report
-about: Found a bug? Let us know so we can fix it!
-title: "[BUG] <Short Description>"
-labels: bug, triage
+about: Found a bug? Create a report to help us improve.
+title: "[BUG] <Short Summary>"
+labels: bug
 assignees: ''
 
 ---
 
-## 🐛 Bug Description
+## 🔍 Description
 A clear and concise description of what the bug is.
+
+---
 
 ## 🚶 Steps to Reproduce
 Steps to reproduce the behavior:
@@ -17,22 +19,33 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-## 🎯 Expected Behavior
-What should have happened?
+---
 
-## 🖼️ Screenshots (Optional)
-If applicable, add screenshots or GIFs to help explain your problem.
-
-## 💻 Environment Details
-- **OS**: [e.g. macOS, Windows, Linux]
-- **Browser/Environment**: [e.g. Chrome, Firefox, Node v18]
-- **Project Version**: [Check package.json]
-
-## 📝 Additional Context
-Add any other context about the problem here.
+## ✅ Expected vs Actual Behavior
+**Expected Behavior**: A clear and concise description of what you expected to happen.
+**Actual Behavior**: A clear and concise description of what actually happened.
 
 ---
-### Checklist
-- [ ] I have searched existing issues for duplicates.
-- [ ] I have checked the [FAQ](../docs/FAQ.md) for potential fixes.
-- [ ] I am willing to work on this bug (Optional).
+
+## 🖼️ Screenshots or Logs
+If applicable, add screenshots to help explain your problem. Paste large logs below:
+
+```bash
+# Paste your logs here
+```
+
+---
+
+## 💻 Environment
+
+| System | Version |
+| :--- | :--- |
+| **OS** | [e.g. macOS, Windows, Ubuntu] |
+| **Node.js** | [e.g. v18.12.0] |
+| **Browser** | [e.g. Chrome, Firefox] |
+| **Commit/Tag** | [e.g. v0.1.2 or HEAD] |
+
+---
+
+## 📝 Additional Context
+Add any other context about the problem here. Provide links to Discord discussions if relevant.

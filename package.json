@@ -1,7 +1,7 @@
 {
-  "name": "campus-events-tracker",
+  "name": "campus-source-project-template",
   "version": "1.0.0",
-  "description": "A platform to track all events on campus.",
+  "description": "A starter kit for student open source projects.",
   "main": "src/index.js",
   "scripts": {
     "dev": "echo 'Run dev mode'",

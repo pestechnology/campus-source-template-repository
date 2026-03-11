@@ -1,28 +1,44 @@
 ---
 name: 🚀 Feature Request
-about: Have an idea for an improvement? Suggest it here!
-title: "[FEAT] <Short Description>"
-labels: enhancement, triage
+about: Have a suggestion for an improvement? Suggest it here!
+title: "[FEAT] <Short Summary>"
+labels: enhancement
 assignees: ''
 
 ---
 
-## 💡 Proposed Feature
+## 🔍 Description
 A clear and concise description of what you want to happen.
 
-## 🤔 Problem Statement
-What problem does this solve? Is it related to a specific pain point?
+---
 
-## 🛠️ Suggested Implementation (Optional)
-How would you build this? Mention specific technologies or files if possible.
-
-## 🔄 Alternatives Considered
-Are there other ways to achieve this?
-
-## 🎯 Value to the Community
-How does this help students using or contributing to Campus Source?
+## 🤔 Problem it Solves
+What problem does this feature solve? It's often related to a specific campus need or developer pain point.
 
 ---
-### Checklist
-- [ ] I have checked the [Roadmap](../../ROADMAP.md) to see if this is planned.
-- [ ] I am willing to build this feature (Optional).
+
+## 🛠️ Proposed Solution
+A clear and concise description of how you think this feature should be implemented.
+
+---
+
+## 🔄 Alternatives
+Are there any other ways to achieve this? Why did you choose this over those?
+
+---
+
+## 🎨 Mockups or Design Sections
+If applicable, add screenshots or sketches of your UI ideas:
+
+| Component | Design |
+| :--- | :--- |
+| **New Sidebar** | [Insert Image URL] |
+
+---
+
+## ✅ Checklist
+- [ ] This feature is **broadly applicable** for most student projects using this template.
+- [ ] This feature is **aligned** with the project roadmap in `docs/ROADMAP.md`.
+
+---
+*Questions? Discuss this in Discord `#ideas` before submitting!*
