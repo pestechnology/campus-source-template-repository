@@ -1,38 +1,36 @@
-# 🗺️ Project Roadmap
+# Project Roadmap
 
-This roadmap outlines the milestones and engineering goals for **Campus Source**. As a community-driven project, these targets are subject to change based on student feedback and maintainer capacity.
+Strategic milestones for the development of the Campus Source ecosystem.
 
 ---
 
-## 📍 Milestone v0.1: Foundation
-*Focus: Establishing the core world-class template and essential automation.*
+## Milestone v0.1: Foundation
+*Objective: Establish core infrastructure and essential automation.*
 
 | Feature | Status | Description |
 | :--- | :--- | :--- |
-| **OSS Pillar Docs** | ✅ | Core README, Contributing, and Code of Conduct guides. |
-| **Label Triage System** | ✅ | Automated label syncing and issue templates. |
-| **CI Implementation** | 🛠️ | GitHub Actions for linting and testing on PRs. |
-| **Landing Page** | 🛠️ | Single-file HTML landing page for project visibility. |
+| **Documentation Pillar** | ✅ | Professional-grade project guides and legal standards. |
+| **Triage System** | ✅ | Automated labeling and structured issue reporting. |
+| **Continuous Integration** | 🛠️ | Automated verification of code quality on all PRs. |
+| **Landing Page** | 🛠️ | Project visibility and entry point for new users. |
 
 ---
 
-## 📍 Milestone v0.5: Engagement
-*Focus: Scaling the community and recognizing contributions.*
+## Milestone v0.5: Engagement
+*Objective: Scale community interaction and contributor recognition.*
 
-- [ ] **Recognition System**: Automated badge generation for merged PRs.
-- [ ] **Discord Integration**: Bot to sync GitHub issues to `#bug-reports`.
-- [ ] **Onboarding Video**: A 2-minute walkthrough for first-timers.
-- [ ] **Newsletter V1**: First issue of the [CUSTOMIZE].dev monthly stack.
-
----
-
-## 📍 Milestone v1.0: Stable
-*Focus: High stability, full feature parity, and university-wide adoption.*
-
-- [ ] **API Registry**: A centralized place for all campus projects to share data.
-- [ ] **Maintainer Pipeline**: Transparent process for student → maintainer promotion.
-- [ ] **v1.0.0 Release**: Tagged version with stable dependencies and full documentation.
-- [ ] **Production Launch**: First real-world deployment on campus servers.
+- [ ] **Recognition Framework**: Automated accreditation for project contributors.
+- [ ] **Integration Bridge**: Synchronize GitHub activity with community channels.
+- [ ] **Onboarding Portfolio**: Interactive walkthroughs for new developers.
 
 ---
-*Have an idea for v0.6? Create a [Feature Request](../.github/ISSUE_TEMPLATE/feature_request.md)!*
+
+## Milestone v1.0: Stable
+*Objective: High availability and cross-campus adoption.*
+
+- [ ] **Registry Service**: Centralized data sharing for university-wide projects.
+- [ ] **Governance Pipeline**: Structured path for student-to-maintainer promotion.
+- [ ] **Stable Release**: Full documentation and finalized dependency management.
+
+---
+*Proposals for future milestones can be submitted via GitHub Discussions.*
